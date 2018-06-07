@@ -8,8 +8,6 @@ namespace Blockchain.Demo.Models
     public class Chain
     {
         // The constants below define how this chain functions.
-        private const decimal TargetSecondsPerBlock = 0.5m;
-        private const int BlocksToEvaluate = 10;
         private Block GenesisBlock => Models.GenesisBlock.Create();
         public Block LastBlock => Blocks.Last();
 

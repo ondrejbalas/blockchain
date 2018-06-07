@@ -50,7 +50,7 @@ namespace ProofOfWork.Demo
             var genesisAddress = genesisBlock.Transactions.Single().Recipients.Single().Address;
             var genesisSpendKey = genesisBlock.SpendKey; // Get the genesis spend key (private key needed to spend coins from the genesis transaction)
 
-            Miner.StartMining(Blockchain, 4);
+            Miner.StartMining(Blockchain, 1);
 
             Console.ReadLine();
         }
